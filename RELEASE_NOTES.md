@@ -56,7 +56,10 @@ changes (where available).
 
 ## UI/UX Improvements
 
-- ???
+- Show a busy cursor when changing views. This provides immediate
+  feedback when, for example, double-clicking an image in the
+  lighttable instead of simply freezing the UI until the darkroom has
+  finished opening.
 
 ## Performance Improvements
 
@@ -70,6 +73,9 @@ changes (where available).
 
 - Hierarchical presets are now supported for utility modules as well
   as processing modules.
+
+- Fixed some issues with the hierarchical styles handling in the
+  styles module.
 
 ## Bug Fixes
 

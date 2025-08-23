@@ -1217,7 +1217,7 @@ static inline gboolean _module_pipe_stop(dt_dev_pixelpipe_t *pipe, float *input)
   const dt_dev_pixelpipe_stopper_t stopper = dt_atomic_get_int(&pipe->shutdown);
   if(stopper != DT_DEV_PIXELPIPE_STOP_NO)
   {
-    if(stopper > DT_DEV_PIXELPIPE_STOP_LAST)
+    if(stopper >= DT_DEV_PIXELPIPE_STOP_LAST)
     {
       dt_dev_pixelpipe_invalidate_cacheline(pipe, input);
       dt_dev_pixelpipe_cache_invalidate_later(pipe, stopper);
